@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h3>AMO Partners Helper</h3>
+    
+    <div class="section">
+      <h4>Добавить подпись</h4>
+      <div class="input-group">
+        <input type="text" id="accountId" placeholder="ID аккаунта" maxlength="20">
+        <input type="text" id="signature" placeholder="Подпись" maxlength="50">
+        <button id="addSignature">Добавить</button>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h4>Поиск аккаунта</h4>
+      <div class="input-group">
+        <input type="text" id="searchAccount" placeholder="ID или подпись">
+        <button id="searchButton">Найти</button>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h4>Подписанные аккаунты</h4>
+      <div id="accountsList" class="accounts-list">
+        <!-- Список аккаунтов будет здесь -->
+      </div>
+    </div>
+    
+    <div class="section">
+      <button id="refreshPage">Обновить страницу</button>
+      <button id="clearAll">Очистить все</button>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

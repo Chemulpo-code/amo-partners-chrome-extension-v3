@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "AMO Partners Helper",
+  "version": "1.0",
+  "description": "Расширение для упрощения работы с магазином партнера AMO",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": [
+    "https://accounts.amocrm.ru/*",
+    "https://www.amocrm.ru/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://accounts.amocrm.ru/*",
+        "https://www.amocrm.ru/*"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AMO Partners Helper"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
